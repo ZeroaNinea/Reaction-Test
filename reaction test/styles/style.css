@@ -1,0 +1,114 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+footer {
+	margin-top: auto;
+}
+/* Header Animation */
+@keyframes slideInLeft {
+	0% {
+		transform: translateX(-5%);
+		opacity: 10%;
+		margin-right: -5%;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 100%;
+		margin-right: 0;
+	}
+}
+.slide-in-left {
+	animation-name: slideInLeft;
+	-webkit-animation-name: slideInLeft;
+	animation-duration: 0.8s; 
+	-webkit-animation-duration: 0.8s;
+	animation-timing-function: ease-in-out; 
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible !important;
+}
+/* /Header Animation */
+/* Title Animation */
+@keyframes slideInRight {
+	0% {
+		transform: translateX(5%);
+		opacity: 10%;
+		margin-left: -5%;
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 100%;
+		margin-left: 0;
+	}
+}
+.slide-in-right {
+	animation-name: slideInRight;
+	-webkit-animation-name: slideInLeft;
+	animation-duration: 0.8s; 
+	-webkit-animation-duration: 0.8s;
+	animation-timing-function: ease-in-out; 
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible !important;
+}
+/* /Title Animation */
+/* Footer Animation */
+@keyframes slideInBottom {
+	0% {
+		transform: translateY(5%);
+		opacity: 10%;
+		margin-bottom: 0%;
+	}
+	100% {
+		transform: translateY(0%);
+		opacity: 100%;
+		margin-bottom: 0;
+	}
+}
+.slide-in-bottom {
+	animation-name: slideInBottom;
+	-webkit-animation-name: slideInBottom;
+	animation-duration: 0.8s; 
+	-webkit-animation-duration: 0.8s;
+	animation-timing-function: ease-in-out; 
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible !important;
+}
+/* /Footer Animation */
+/*body {
+	height: 2000px;
+}*/
+/* Cursor Default */
+.cursor-default {
+	cursor: default;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;;
+}
+/* /Cursor Default */
+/* Reaction Test */
+.button-color {
+	background: linear-gradient(-45deg, #FFA63D, #FF3D77, #505cFf, #530C65);
+	background-size: 1000%;
+	animation: anime 10s linear infinite;
+	box-shadow: 10px 10px 5px lightblue;
+}
+@keyframes anime {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 0%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#reset-button {
+	opacity: 0;
+}
+.pointer-prevent {
+	pointer-events: none;
+}
+/* /Reaction Test */
